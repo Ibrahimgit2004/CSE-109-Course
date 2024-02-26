@@ -1,14 +1,19 @@
 #include<stdio.h>
-
-void sq(int a)
+void sum(int *p1)
 {
-    int result;
-    result=a*a;
-    printf("square value is= %d",result);
 
+    int i,sum=0;
+    for(i=0; i<5; i++)
+    {
+        sum=sum+*p1;
+        p1++;
+
+
+    }
+    printf("%d ", sum);
 }
-
 int main()
 {
-    sq(10);
+    int a[]={10,20,30,40,50};
+    sum(&a[0]);
 }

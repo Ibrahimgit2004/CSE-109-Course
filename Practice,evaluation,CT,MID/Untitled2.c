@@ -1,17 +1,20 @@
 #include<stdio.h>
 
-void sum(int n)
-{
-    int sum=0;
-    for(int i=0; i<=n; i++)
-    {
-       sum=sum+i;
-    }
-    printf("%d\n",sum);
-}
 
-int main()
-{
-    sum(100);
-    sum(5);
-}
+void sum(int n)
+    {
+        int i=0,sum=0;
+        for(i=0; i<=n; i++)
+        {
+            sum=sum+i;
+        }
+        printf("sum= %d",sum);
+    }
+    int main()
+    {
+        int n;
+        printf("n= ");
+        scanf("%d", &n);
+        sum(n);
+    }
+

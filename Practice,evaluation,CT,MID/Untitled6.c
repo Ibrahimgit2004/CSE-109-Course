@@ -1,23 +1,14 @@
 #include<stdio.h>
-
-void display(int sum[])
+struct info
 {
-    int max=sum[0];
-    for(int i=0; i<5; i++)
-    {
-        if(sum[i]>max)
-        {
-            max=sum[i];
-
-        }
-
-    }
-
-     printf("%d",max);
-}
+    int roll;
+    int mark;
+};
 int main()
 {
-    int x[5]={10,20,130,70,25};
-    display(x);
-
+    struct info *b,*c;
+    int q=10,r=20;
+    b=&q;
+    c=&q;
+    printf("%d",b->x);
 }
