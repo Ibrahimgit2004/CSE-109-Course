@@ -1,18 +1,21 @@
 #include<stdio.h>
+
+void area(int b,int h)
+{
+
+    printf("area is %d",(b*h)/2 );
+}
+
 int main()
 {
-    int i,n;
+    int base,height;
 
-    printf("n= ");
-    scanf("%d", &n);
+    printf(" base is= ");
+    scanf("%d", &base);
+    printf("height is = ");
+    scanf("%d", &height);
 
-    for(i=1; i<=n; i++)
-    {
-        if(n%i==0)
-        {
-            printf(" %d ", i);
-        }
+    area(base,height);
 
-    }
 
 }

@@ -1,32 +1,18 @@
 #include<stdio.h>
+
+void sum (int n)
+{
+    int sum=0;
+    for(int i=0; i<=n; i++)
+    {
+        sum=sum+i;
+    }
+    printf("total sum is= %d\n", sum);
+
+}
+
 int main()
 {
-    int sum=0,i,n;
-
-    printf("n= ");
-    scanf("%d", &n);
-
-    for(i=1; i<=n; i++)
-    {
-        if(i<n)
-        {
-            printf("%d^%d+",i,i);
-        }
-        else if(i==n)
-        {
-            printf("%d^%d=",i,i);
-        }
-
-
-
-
-    }
-
-    for(i=1; i<=n; i++)
-    {
-        {
-            sum=sum+i*i;
-        }
-    }
-    printf("%d", sum);
+    sum(100);
+    sum(5);
 }

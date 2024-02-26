@@ -1,16 +1,15 @@
 #include<stdio.h>
+
+void reyad(int base,int exp)
+{
+    int result;
+    result= pow(base,exp);
+    printf("result is= %d\n",result);
+}
+
 int main()
 {
-    int i,n,f=1;
 
-    printf("n= ");
-    scanf("%d", &n);
-
-        for(i=1; i<=n; i++)
-        {
-           f=f*i;
-        }
-        printf("factorial= %d", f);
-
-
+    reyad(5,2);
+    reyad(6,2);
 }
